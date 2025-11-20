@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checky - Trợ lý Sự Thật</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-content">
+        <h1>Trợ lý AI Sự Thật</h1>
+        <p>
+            Chào mừng bạn đến với <b>Checky</b>!<br>
+            Mình chuyên kiểm chứng thông tin, bác bỏ tin giả và cung cấp thông tin chính thống .<br>
+            Hãy nhấn vào biểu tượng chat bên dưới để bắt đầu nhé
+        </p>
+    </div>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">forum</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    
+    <div class="chatbot">
+        <header>
+            <h2>Checky Fact-Checker</h2>
+            <div class="header-controls">
+                <span id="download-btn" class="material-symbols-outlined" title="Tải cuộc trò chuyện">download</span>
+                <span id="delete-btn" class="material-symbols-outlined" title="Xóa lịch sử">delete</span>
+                <span class="close-btn material-symbols-outlined" title="Đóng chat">close</span>
+            </div>
+        </header>
+        
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">verified_user</span>
+                <p>Chào bạn! Mình là Checky. Bạn có thông tin nào cần xác thực không? Kể mình nghe đi, mình sẽ tra cứu nguồn chính thống giúp bạn!</p>
+            </li>
+        </ul>
+        
+        <div class="chat-input">
+            <textarea placeholder="Nhập thông tin cần kiểm chứng..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
